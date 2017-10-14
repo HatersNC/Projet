@@ -92,8 +92,12 @@ void AMyProjectCharacter::Tick(float DeltaSeconds)
 }
 
 void AMyProjectCharacter::setPlayerLife(int newLife) {
-	_playerLife = newLife;
-
+	if (newLife <= 0) {
+		_playerLife = 0;
+	}
+	else {
+		_playerLife = newLife;
+	}
 }
 
 void AMyProjectCharacter::setPlayerDamage(int newDamage) {

@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\MyProject.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{9D0F6C2D-D624-45E3-9006-C5C506D8C22B}</UniqueIdentifier>
+			<UniqueIdentifier>{57E82715-80B6-4D33-BF27-98CD5624F309}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\MyProject.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{38F77082-A6B1-4F36-A10F-FFFB873F0CAE}</UniqueIdentifier>
+			<UniqueIdentifier>{387DE76E-EEDE-43C0-8573-E9B9D6DF3767}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,8 +31,14 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\MyProject">
-			<UniqueIdentifier>{10650C46-D6D5-4709-9EEA-D26498EB02B9}</UniqueIdentifier>
+			<UniqueIdentifier>{B69CCED6-8819-4F9B-B84E-A6E8B61B9D2A}</UniqueIdentifier>
 		</Filter>
+		<ClCompile Include="..\..\Source\MyProject\MyClickable.cpp">
+			<Filter>Source\MyProject</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\MyProject\MyClickable.h">
+			<Filter>Source\MyProject</Filter>
+		</ClInclude >
 		<None Include="..\..\Source\MyProject\MyProject.Build.cs">
 			<Filter>Source\MyProject</Filter>
 		</None >
