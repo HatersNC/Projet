@@ -13,8 +13,80 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define MYPROJECT_MyProjectCharacter_generated_h
 
-#define MyProject_Source_MyProject_MyProjectCharacter_h_12_RPC_WRAPPERS
-#define MyProject_Source_MyProject_MyProjectCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define MyProject_Source_MyProject_MyProjectCharacter_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execsetPlayerDamage) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_newDamage); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->setPlayerDamage(Z_Param_newDamage); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execgetPlayerDamage) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=this->getPlayerDamage(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execsetPlayerLife) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_newLife); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->setPlayerLife(Z_Param_newLife); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execgetPlayerLife) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=this->getPlayerLife(); \
+		P_NATIVE_END; \
+	}
+
+
+#define MyProject_Source_MyProject_MyProjectCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execsetPlayerDamage) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_newDamage); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->setPlayerDamage(Z_Param_newDamage); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execgetPlayerDamage) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=this->getPlayerDamage(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execsetPlayerLife) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_newLife); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->setPlayerLife(Z_Param_newLife); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execgetPlayerLife) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=this->getPlayerLife(); \
+		P_NATIVE_END; \
+	}
+
+
 #define MyProject_Source_MyProject_MyProjectCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMyProjectCharacter(); \

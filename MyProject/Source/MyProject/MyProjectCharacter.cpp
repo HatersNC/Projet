@@ -13,6 +13,9 @@
 
 AMyProjectCharacter::AMyProjectCharacter()
 {
+
+	_playerLife = 100;
+	_playerDamage = 1;
 	// Set size for player capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
@@ -86,4 +89,14 @@ void AMyProjectCharacter::Tick(float DeltaSeconds)
 			CursorToWorld->SetWorldRotation(CursorR);
 		}
 	}
+}
+
+void AMyProjectCharacter::setPlayerLife(int newLife) {
+	_playerLife = newLife;
+
+}
+
+void AMyProjectCharacter::setPlayerDamage(int newDamage) {
+	_playerDamage = newDamage;
+
 }

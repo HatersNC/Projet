@@ -24,6 +24,15 @@ public:
 	/** Returns CursorToWorld subobject **/
 	FORCEINLINE class UDecalComponent* GetCursorToWorld() { return CursorToWorld; }
 
+	UFUNCTION(BlueprintCallable, Category = "Player")
+	inline int getPlayerLife() { return _playerLife; }
+	UFUNCTION(BlueprintCallable, Category = "Player")
+	void setPlayerLife(int newLife);
+	UFUNCTION(BlueprintCallable, Category = "Player")
+	inline int getPlayerDamage() { return _playerDamage; }
+	UFUNCTION(BlueprintCallable, Category = "Player")
+	void setPlayerDamage(int newDamage);
+
 private:
 	/** Top down camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
@@ -36,5 +45,10 @@ private:
 	/** A decal that projects to the cursor location. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UDecalComponent* CursorToWorld;
+
+
+	int _playerLife;
+
+	int _playerDamage;
 };
 

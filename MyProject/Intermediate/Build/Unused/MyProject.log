@@ -1,0 +1,25 @@
+﻿  Cleaning MyProjectEditor Binaries...
+  Compiling game modules for hot reload
+  Compiling game modules for hot reload
+  Performing full C++ include scan (no include cache file)
+  Parsing headers for MyProjectEditor
+    Running UnrealHeaderTool "C:\Users\Quentin\Documents\Projet\MyProject\MyProject.uproject" "C:\Users\Quentin\Documents\Projet\MyProject\Intermediate\Build\Win64\MyProjectEditor\Development\MyProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for MyProjectEditor in 10,3812368 seconds
+  Performing 13 actions (4 in parallel)
+  [2/13] Resource ModuleVersionResource.rc.inl
+  [3/13] Resource PCLaunch.rc
+  SharedPCH.Engine.cpp
+  MyProject.cpp
+  MyProjectGameMode.cpp
+  MyProjectPlayerController.cpp
+  MyProjectCharacter.cpp
+  MyProject.init.gen.cpp
+  MyProjectCharacter.gen.cpp
+  MyProjectGameMode.gen.cpp
+  MyProjectPlayerController.gen.cpp
+  [12/13] Link UE4Editor-MyProject-5685.dll
+  [13/13] Link UE4Editor-MyProject-5685.lib
+     Creating library C:\Users\Quentin\Documents\Projet\MyProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-5685.suppressed.lib and object C:\Users\Quentin\Documents\Projet\MyProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-5685.suppressed.exp
+     Creating library C:\Users\Quentin\Documents\Projet\MyProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-5685.lib and object C:\Users\Quentin\Documents\Projet\MyProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-MyProject-5685.exp
+  Deploying MyProjectEditor Win64 Development...
+  Total build time: 46,05 seconds (Local executor: 26,27 seconds)
